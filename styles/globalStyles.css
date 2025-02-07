@@ -1,0 +1,128 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Satoshi", sans-serif;
+    text-align: center;
+}
+
+/* Header */
+.header-inner-content {
+    background-color: #F2F0F1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.navbar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar {
+    margin-top: 10px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    padding: 8px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+
+.nav-icon-container {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.nav-icon-container img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Main Section */
+.header-bottom-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.header-bottom-side-left {
+    max-width: 400px;
+    text-align: center;
+}
+
+.header-bottom-side-left h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-bottom-side-left p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.shop-now-btn {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.header-bottom-side-right img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .header-bottom-side {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .header-bottom-side-left {
+        text-align: left;
+    }
+
+    .header-bottom-side-right img {
+        width: 300px;
+    }
+}
