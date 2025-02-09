@@ -368,8 +368,179 @@ nav ul li:hover {
     padding: 24px;
 }
 
+.product-name {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 16px 0 8px 0;
+    text-align: left;
+}
+
+.rate-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    font-size: 14px ;
+}
+
+.rate-container p {
+    font-family: "Satoshi";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.9px;
+}
+
+.rate-container span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.9px;
+    color: #777777;
+}
+
 .cols-5 {
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-content: center;
 }
+
+.page-inner-content-two{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #0000001A
+}
+
+.section-title{
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    text-align: center;
+    margin: 72px 0 55px 0;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.cols>* {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover {
+    transform: translateY(-5px);
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+}
+
+.rate{
+    width: 80px;
+    height: 18px;
+    gap: 5.31px;
+}
+
+.product-price-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.product-price{
+    text-align: left;
+    width: 55px;
+    height: 32px;
+    gap: 10px;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+}
+.product-price-old{
+    text-align: left;
+    width: 55px;
+    height: 32px;
+    gap: 10px;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    color: #00000066;
+    text-decoration: line-through;
+}
+
+.product-price-discount{
+    color: #FF3333;
+    font-family: "Satoshi";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16.2px;
+    width: 58px;
+    height: 28px;
+    gap: 12px;
+    border-radius: 62px;
+    background: #FF33331A;
+    padding: 6px 14px;
+}
+
+.page-inner-content-three{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.view-all {
+    width: 218px;
+    height: 52px;
+    border-radius: 62px;
+    padding: 16px 54px;
+    border: 1px solid #0000001A;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    cursor: pointer;
+    font-family: "Satoshi" , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.6px;
+}
+
+.gray-background{
+    width: 1440px;
+    height: 866px;
+    border-radius: 40px;
+    background: #F0F0F0;
+    display: flex;
+    max-width: 1440px;
+    margin: 80px auto 24px auto;
+    justify-content: space-between;
+}
+
+.page-inner-content-four{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-style{
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    text-align: center;
+    margin: 70px 0 64px 0;
+}
+
+.container-image{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
