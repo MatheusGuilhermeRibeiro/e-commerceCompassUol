@@ -5,44 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop.co</title>
     <link rel="stylesheet" href="styles/globalStyles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <script src="script.ts" defer></script>
-    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+    <title>SHOP.CO</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="header-inner-content">
-            <h1 class="logo">SHOP.CO</h1>
-            <nav>
-                <ul>
-                    <li>Shop</li>
-                    <li>On Sale</li>
-                    <li>New Arrivals</li>
-                    <li>Brands</li>
-                </ul>
-            </nav>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for products...">
+<div class="navbar show-menu">
+    <div class="header-inner-content">
+        <img src="assets/icons/menu.svg" class="menu-button">
+        <h1 class="logo">SHOP.CO</h1>
+        <nav>
+            <ul>
+                <li>Shop</li>
+                <li>On Sale</li>
+                <li>New Arrivals</li>
+                <li>Brands</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-container">
+        <i class="fa fa-search"></i>
+        <input class="search" type="text" placeholder="Search for products...">
+    </div>
+    <div class="nav-icon-container">
+        <img src="assets/icons/lupa.svg" alt="magnifying glass" class="search-querie">
+        <img src="assets/icons/carrinho.svg" alt="Cart">
+        <img src="assets/icons/user.svg" alt="User">
+    </div>
+</div>
+<header>
+    <div class="header-inner-content-two">
+        <div class="header-bottom-side">
+            <div class="header-bottom-side-left">
+                <h2>FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
+                <p>
+                    Browse through our diverse range of meticulously crafted garments,
+                    designed to bring out your individuality and cater to your sense of style.
+                </p>
+                <button>Shop Now</button>
+                <div class="container-info-wrapper">
+                    <ul class="container-info">
+                        <li class="statistic-number">
+                            <h3 class="item-value">200+</h3>
+                            <p class="item-description">International Brands</p>
+                        </li>
+                        <div class="divider"></div>
+                        <li class="statistic-number">
+                            <h3 class="item-value">2,000+</h3>
+                            <p class="item-description">High-Quality Products</p>
+                        </li>
+                        <div class="divider-two"></div>
+                        <li class="statistic-number">
+                            <h3 class="item-value">30,000+</h3>
+                            <p class="item-description">Happy Customers</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav-icon-container">
-                <img class="shop-logo" src="assets/icons/carrinho.svg" alt="Shop.CO">
-                <img class="shop-logo" src="assets/icons/user.svg" alt="Shop.CO">
+            <div class="header-bottom-side-right">
+                <img src="assets/image/peoples.svg">
             </div>
         </div>
     </div>
-    <header>
-        <div class="header-inner-content">
-            <div class="header-bottom-side">
-                <div class="header-bottom-side-left">
-                    <h2>FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
-                    <p>Browse through our diverse range of meticulously crafted garments,
-                        designed to bring out your individuality and cater to your sense of style.</p>
-                    <button class="shop-button">Shop Now</button>
-                </div>
-                <div class="header-bottom-side-right">
-                    <img src="assets/image/Rectangle%202.svg" alt="Shop.CO">
-                </div>
-            </div>
+</header>
+
+<!--Main Content-->
+<main>
+    <div class="page-inner-content">
+        <div class="cols cols-5">
+            <img src="assets/image/Versace.svg" alt="Versace logo">
+            <img src="assets/image/zara-logo-1%201.svg" alt="Zara logo">
+            <img src="assets/image/gucci-logo-1%201.svg" alt="Gucci logo">
+            <img src="assets/image/prada-logo-1%201.svg" alt="Prada logo">
+            <img src="assets/image/calvin-klein-logo.svg" alt="Calvin Klein logo">
         </div>
-    </header>
+    </div>
+
+    <div>
+        <div class="page-inner-content">
+            <h3 class="section-title">NEW ARRIVALS</h3>
+            <div class="subtitle-underline"></div>
+            <div></div>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        if (menuButton) {
+            menuButton.addEventListener("click", () => {
+                navbar.classList.toggle("show-menu");
+            });
+        }
+    });
+</script>
 </body>
 </html>
