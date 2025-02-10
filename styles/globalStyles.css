@@ -61,6 +61,11 @@
     border-radius: 62px;
 }
 
+.search-container i {
+    color: #00000066;
+    margin: 0 14px 0 18px
+}
+
 .search-container img{
     display: flex;
     margin-left: 8px;
@@ -235,8 +240,15 @@ nav ul li:hover {
         box-sizing: border-box;
     }
 
+    .search-container i{
+        display: none;
+    }
+
     .logo {
-        font-size: 1.2rem;
+        font-family: "Integral CF";
+        font-weight: 700;
+        font-size: 25.2px;
+        line-height: 30.24px;
     }
 
     .menu-button {
@@ -354,9 +366,11 @@ nav ul li:hover {
     }
 }
 
+/*header*/
+
 /*Main Content*/
 
-.page-inner-content {
+.page-inner-content-desktop {
     background-color: #000000;
     max-width: 1440px;
     margin: 0 auto;
@@ -543,4 +557,64 @@ nav ul li:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/*Media Querie*/
+@media (max-width: 768px) {
+    .page-inner-content-mobile{
+        background-color: #000000;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    /*.cols-4{*/
+    /*    grid-template-columns: repeat(1, 1fr);*/
+    /*}*/
+
+    .page-inner-content-desktop {
+        display: none;
+    }
+    .section-title{
+        font-family: "Integral CF";
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.4px;
+        text-align: center;
+    }
+
+    .cols-4 {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .cols-4::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product {
+        flex: 0 0 auto;
+        width: 80%;
+        scroll-snap-align: center;
+    }
+
+    .image-container-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 34px;
+        padding-top: 40px;
+    }
+
+    .image-container-down {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 34px;
+        padding: 20px 0 40px 0;
+    }
+}
+
+/*Main Content*/
 
