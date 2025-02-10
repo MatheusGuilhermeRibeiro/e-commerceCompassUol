@@ -10,6 +10,10 @@
     <title>SHOP.CO</title>
 </head>
 <body>
+<nav class="top-nav">
+    <p>Sign up and get 20% off to your first order.</p>
+    <a class="signUp" href='/registro'>Sign Up Now</a>
+</nav>
 <div class="navbar show-menu">
     <div class="header-inner-content">
         <img src="assets/icons/menu.svg" class="menu-button">
@@ -63,7 +67,8 @@
                 </div>
             </div>
             <div class="header-bottom-side-right">
-                <img src="assets/image/peoples.svg">
+                <img class="peoples-desktop" src="assets/image/peoples-desktop.svg" alt="peoples">
+                <img class="peoples-mobile" src="assets/image/peoples.svg" alt="peoples">
             </div>
         </div>
     </div>
@@ -154,7 +159,7 @@
             <h3 class="section-title">TOP SELLING</h3>
             <div class="cols cols-4">
                 <div class="product">
-                    <img src="/assets/image/VERTICAL-STRIPED-SHIRT.svg" alt="T-shirt">
+                    <img src="/assets/image/VERTICAL-STRIPED-SHIRT.svg" alt="Vertical Striped Shirt">
                     <p class="product-name">Vertical Striped Shirt</p>
                     <div class="rate-container">
                         <img class="rate" src="assets/image/star-5.svg" alt="rate">
@@ -167,7 +172,7 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="/assets/image/COURAGE-GRAPHIC-T-SHIRT.svg" alt="Skinny-fit-jeans">
+                    <img src="/assets/image/COURAGE-GRAPHIC-T-SHIRT.svg" alt="Courage Graphic T-shirt">
                     <p class="product-name">Courage Graphic T-shirt</p>
                     <div class="rate-container">
                         <img class="rate" src="assets/image/star-4.svg" alt="rate">
@@ -176,7 +181,7 @@
                     <p class="product-price">$145</p>
                 </div>
                 <div class="product">
-                    <img src="/assets/image/LOOSE-FIT-BERMUDA-SHORTS.svg" alt="Checkred-shirt">
+                    <img src="/assets/image/LOOSE-FIT-BERMUDA-SHORTS.svg" alt="Loose Fit Bermuda Shorts">
                     <p class="product-name">Loose Fit Bermuda Shorts</p>
                     <div class="rate-container">
                         <img class="rate" src="assets/image/star-3.svg" alt="rate">
@@ -185,7 +190,7 @@
                     <p class="product-price">$80</p>
                 </div>
                 <div class="product">
-                    <img src="/assets/image/FADED-SKINNY-JEANS.svg" alt="Sleeve-striped-t-shirt">
+                    <img src="/assets/image/FADED-SKINNY-JEANS.svg" alt="Faded Skinny Jeans">
                     <p class="product-name">Faded Skinny Jeans</p>
                     <div class="rate-container">
                         <img class="rate" src="assets/image/star-1.svg" alt="rate">
@@ -199,19 +204,58 @@
         <!--  TOP SELLING -->
     </div>
 
-<!--    <div class="gray-background">-->
-<!--        <div class="page-inner-content-four">-->
-<!--            <h4 class="title-style">BROWSE BY DRESS STYLE</h4>-->
-<!--            <div class="container-image">-->
-<!--                <img src="assets/image/casual.svg" alt="Casual Style">-->
-<!--                <img src="assets/image/Formal.svg" alt="Formal Style">-->
-<!--                <img src="assets/image/party.svg" alt="Party Style">-->
-<!--                <img src="assets/image/Gym.svg" alt="Gym Style">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <!--    <div class="gray-background">-->
+    <!--        <div class="page-inner-content-four">-->
+    <!--            <h4 class="title-style">BROWSE BY DRESS STYLE</h4>-->
+    <!--            <div class="container-image">-->
+    <!--                <img src="assets/image/casual.svg" alt="Casual Style">-->
+    <!--                <img src="assets/image/Formal.svg" alt="Formal Style">-->
+    <!--                <img src="assets/image/party.svg" alt="Party Style">-->
+    <!--                <img src="assets/image/Gym.svg" alt="Gym Style">-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div>
+        <div class="page-inner-content-feedbacks">
+            <h5>OUR HAPPY CUSTOMERS</h5>
+            <div class="feedbacks">
+                <div class="feedback">
+                    <img src="/assets/image/star-5.svg" alt="rate">
+                    <p class="name-user">Sarah M.</p>
+                    <p class="feedback-message">
+                        "I'm blown away by the quality and style of the clothes I received from Shop.co.
+                        From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                    </p>
+                </div>
+                <div class="feedback">
+                    <img src="/assets/image/star-5.svg" alt="rate">
+                    <p class="name-user">Alex K.</p>
+                    <p class="feedback-message">"Finding clothes that align with my personal style used to be a
+                        challenge until I discovered Shop.co.
+                        The range of options they offer is truly remarkable, catering to a variety of tastes and
+                        occasions.”
+                    </p>
+                </div>
+                <div class="feedback">
+                    <img src="/assets/image/star-5.svg" alt="rate">
+                    <p class="name-user">James L.</p>
+                    <p class="feedback-message">"As someone who's always on the lookout for unique fashion pieces,
+                        I'm thrilled to have stumbled upon Shop.co.
+                        The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+<footer class="gray-background-footer">
+    <div class="page-inner-content footer-content">
+        <h6 class="logo">SHOP.CO</h6>
+        <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+        <div>
 
+        </div>
+    </div>
+</footer>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const navbar = document.querySelector(".navbar");
