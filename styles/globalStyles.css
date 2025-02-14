@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Header*/
 
 @font-face {
@@ -19,7 +20,7 @@
     font-style: normal;
 }
 
-.top-nav{
+.top-nav {
     background-color: black;
     color: aliceblue;
     height: 40px;
@@ -34,7 +35,7 @@
     display: flex;
 }
 
-.signUp{
+.signUp {
     color: white;
 }
 
@@ -47,6 +48,7 @@
     z-index: 99;
     background-color: #FFFFFF;
     max-width: 100%;
+    margin-bottom: 24px;
 }
 
 .navbar > div {
@@ -72,7 +74,7 @@
     margin-left: 16px;
 }
 
-.search-container{
+.search-container {
     display: flex;
     background-color: #F0F0F0;
     border-radius: 62px;
@@ -83,12 +85,11 @@
     margin: 0 14px 0 18px
 }
 
-.search-container img{
+.search-container img {
     display: flex;
     margin-left: 8px;
-    color:#00000066 ;
+    color: #00000066;
     background: #00000066;
-
 }
 
 .search {
@@ -118,7 +119,7 @@ nav ul {
     gap: 14px;
 }
 
-.search-querie{
+.search-querie {
     display: none;
 }
 
@@ -182,8 +183,6 @@ nav ul li:hover {
 .header-bottom-side-left button {
     width: 210px;
     height: 52px;
-    top: 507px;
-    left: 100px;
     border-radius: 62px;
     padding: 16px 54px;
     gap: 12px;
@@ -216,6 +215,7 @@ nav ul li:hover {
 }
 
 .peoples-mobile{
+    display: none;
 }
 
 .container-info-wrapper {
@@ -260,6 +260,13 @@ nav ul li:hover {
     background-color: #ccc;
 }
 
+.divider-two {
+    width: 1px;
+    height: 80px;
+    background-color: #ccc;
+    display: block;
+}
+
 /* Media Queries*/
 @media (max-width: 768px) {
     * {
@@ -283,11 +290,11 @@ nav ul li:hover {
         display: flex;
     }
 
-    .signUp{
+    .signUp {
         color: white;
     }
 
-    .search-container i{
+    .search-container i {
         display: none;
     }
 
@@ -342,13 +349,13 @@ nav ul li:hover {
         display: block;
     }
 
-    .header-bottom-side-left h2{
+    .header-bottom-side-left h2 {
         font-weight: 700;
         font-size: 36px;
         line-height: 34px;
     }
 
-    .header-bottom-side-left p{
+    .header-bottom-side-left p {
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -418,6 +425,10 @@ nav ul li:hover {
     .peoples-mobile {
         display: block;
     }
+
+    .divider-two {
+        display: none;
+    }
 }
 
 /*header*/
@@ -431,7 +442,7 @@ nav ul li:hover {
     display: block;
 }
 
-.page-inner-content-mobile{
+.page-inner-content-mobile {
     display: none;
 }
 
@@ -450,11 +461,11 @@ nav ul li:hover {
     text-align: left;
 }
 
-.rate-container{
+.rate-container {
     display: flex;
     align-items: flex-start;
     gap: 13px;
-    font-size: 14px ;
+    font-size: 14px;
 }
 
 .rate-container p {
@@ -477,14 +488,14 @@ nav ul li:hover {
     justify-content: center;
 }
 
-.page-inner-content-two{
+.page-inner-content-two {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
     border-bottom: 1px solid #0000001A
 }
 
-.section-title{
+.section-title {
     font-family: "Integral CF", sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -493,38 +504,38 @@ nav ul li:hover {
     margin: 72px 0 55px 0;
 }
 
-.cols-4{
+.cols-4 {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
 }
 
-.cols>* {
+.cols > * {
     cursor: pointer;
     transition: all 0.2s;
 }
 
-.cols>*:hover {
+.cols > *:hover {
     transform: translateY(-5px);
 }
 
-.product{
+.product {
     display: flex;
     flex-direction: column;
 }
 
-.rate{
+.rate {
     width: 80px;
     height: 18px;
     gap: 5.31px;
 }
 
-.product-price-container{
+.product-price-container {
     display: flex;
     gap: 10px;
     margin-top: 8px;
 }
 
-.product-price{
+.product-price {
     text-align: left;
     width: 55px;
     height: 32px;
@@ -534,7 +545,8 @@ nav ul li:hover {
     font-size: 24px;
     line-height: 32.4px;
 }
-.product-price-old{
+
+.product-price-old {
     text-align: left;
     width: 55px;
     height: 32px;
@@ -547,7 +559,7 @@ nav ul li:hover {
     text-decoration: line-through;
 }
 
-.product-price-discount{
+.product-price-discount {
     color: #FF3333;
     font-family: "Satoshi";
     font-weight: 500;
@@ -561,7 +573,7 @@ nav ul li:hover {
     padding: 6px 14px;
 }
 
-.page-inner-content-three{
+.page-inner-content-three {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -578,13 +590,13 @@ nav ul li:hover {
     align-items: center;
     margin: 20px auto;
     cursor: pointer;
-    font-family: "Satoshi" , sans-serif;
+    font-family: "Satoshi", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 21.6px;
 }
 
-.gray-background{
+.gray-background {
     width: 100%;
     height: 866px;
     border-radius: 40px;
@@ -594,13 +606,13 @@ nav ul li:hover {
     justify-content: space-between;
 }
 
-.page-inner-content-four{
+.page-inner-content-four {
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
 }
 
-.title-style{
+.title-style {
     font-family: "Integral CF", sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -609,25 +621,33 @@ nav ul li:hover {
     margin: 70px 0 64px 0;
 }
 
-.container-image{
-    display: flex;
-    gap: 20px;
+.container-image {
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 20px;
+}
+
+.container-image img {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 /*Media Querie*/
 @media (max-width: 768px) {
-    .page-inner-content-mobile{
+    .page-inner-content-mobile {
         background-color: #000000;
         margin: 0 auto;
         justify-content: space-between;
+        display: block;
     }
 
     .page-inner-content-desktop {
         display: none;
     }
-    .section-title{
+
+    .section-title {
         font-family: "Integral CF";
         font-weight: 700;
         font-size: 32px;
@@ -673,12 +693,12 @@ nav ul li:hover {
 /*Main Content*/
 
 /*FeedBacks*/
-.page-inner-content-feedbacks{
+.page-inner-content-feedbacks {
     display: grid;
     padding: 24px;
 }
 
-.page-inner-content-feedbacks h5{
+.page-inner-content-feedbacks h5 {
     font-family: "Integral CF";
     font-weight: 700;
     font-size: 48px;
@@ -686,12 +706,12 @@ nav ul li:hover {
     margin-bottom: 40px;
 }
 
-.feedbacks{
+.feedbacks {
     display: flex;
     gap: 16px;
 }
 
-.feedback{
+.feedback {
     width: 400px;
     display: flex;
     align-items: flex-start;
@@ -707,14 +727,14 @@ nav ul li:hover {
     margin: 5px 0;
 }
 
-.name-user{
+.name-user {
     font-family: "Satoshi";
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
 }
 
-.feedback-message{
+.feedback-message {
     font-family: "Satoshi";
     font-weight: 400;
     font-size: 16px;
@@ -723,28 +743,147 @@ nav ul li:hover {
 
 /*Media Querie*/
 @media (max-width: 768px) {
-    .feedbacks{
+    .feedbacks {
         flex-direction: column;
     }
 
-    .feedback{
+    .feedback {
         margin-bottom: 16px;
     }
 }
+
 /*Media Querie*/
 
 /*Footer*/
-.gray-background-footer{
-    width: 100%;
-    background: #F0F0F0;
-    display: flex;
-    margin: 80px auto 24px auto;
+
+.gray-background-footer {
+    background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #ffffff 20%,
+            #F0F0F0 20%,
+            #F0F0F0 100%
+    );
+    padding: 40px;
 }
 
-.page-inner-content-desktop {
-    max-width: 100%;
+.newsletter {
+    width: 100%;
+    max-width: 1240px; /* limite máximo, mas responsivo */
     margin: 0 auto;
-    display: block;
+    font-family: "Integral CF";
+    background-color: black;
+    color: white;
+    padding: 36px 64px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.newsletter h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-family: "Satoshi";
+}
+
+.newsletter-form input {
+    padding: 12px 16px;
+    border: none;
+    margin-bottom: 5px;
+    width: 349px;
+    height: 48px;
+    border-radius: 62px;
+    gap: 12px;
+}
+
+.newsletter-form button {
+    padding: 12px 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 349px;
+    height: 46px;
+    border-radius: 62px;
+    gap: 12px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    width: 30%;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Integral CF";
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer-links {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Satoshi";
+}
+
+.column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.column a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.column a:hover {
+    color: black;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+.payment-icons img {
+    height: 20px;
+    margin-left: 10px;
+}
+
 /*Footer*/
 /*FeedBacks*/
