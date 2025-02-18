@@ -142,6 +142,12 @@ nav ul li a {
     color: #00000066;
 }
 
+.icon-container {
+    display: flex;
+    padding: 1vw;
+    gap: 1vw;
+}
+
 .cart i, .account i {
     color: #000000;
 }
@@ -315,19 +321,6 @@ nav ul li:hover {
     justify-content: space-between;
     padding: 6vh 7vw;
     background-color: #000;
-}
-
-
-
-.page-inner-content-desktop {
-    background-color: #000000;
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
-}
-
-.page-inner-content-mobile {
-    display: none;
 }
 
 .cols {
@@ -893,8 +886,10 @@ footer {
         background-color: #f0f0f0;
     }
 
-    #searchMobile {
+    #searchMobile, .cart, .account {
         display: flex;
+        align-items: center;
+        margin-left: auto;
     }
 
     #searchMobile.active {
@@ -923,7 +918,8 @@ footer {
     }
 
     .search-icon {
-        margin-right: 0;
+        margin-right: 0.8rem;
+        color: #000000;
     }
 
     .logoContainer {
@@ -1050,16 +1046,8 @@ footer {
         height: 4vh;
     }
 
-    .page-inner-content-mobile {
-        background-color: #000000;
-        margin: 0 auto;
-        justify-content: space-between;
-        display: block;
-    }
 
-    .page-inner-content-desktop {
-        display: none;
-    }
+
 
     .section-title {
         font-family: "Integral CF";
@@ -1072,7 +1060,6 @@ footer {
     .cols-4 {
         display: flex;
         overflow-x: auto;
-        scroll-snap-type: x mandatory;
         gap: 10px;
         padding: 10px;
     }
@@ -1084,7 +1071,6 @@ footer {
     .product {
         flex: 0 0 auto;
         width: 80%;
-        scroll-snap-align: center;
     }
 
     .image-container-up {
@@ -1131,10 +1117,10 @@ footer {
     .dress-style-item {
         height: 25vh;
         border-radius: 2rem;
-        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
 
     .dress-style-item h4 {
         margin: 3vh 3vw;
@@ -1146,22 +1132,27 @@ footer {
 
     .casual {
         flex-basis: auto;
-        background-image: url("assets/image/image-11.png");
+        background-image: url("../assets/image/image-11.png");
+
     }
 
     .formal {
         flex-basis: auto;
-        background-image: url("assets/image/image-13.png");
+        background-image: url("../assets/image/image-13.png");
     }
 
     .party {
         flex-basis: auto;
-        background-image: url("assets/image/image-12.png");
+        background-image: url("../assets/image/image-12.png");
     }
 
     .gym {
         flex-basis: auto;
-        background-image: url("assets/image/image-14.png");
+        background-image: url("../assets/image/image-14.png");
+    }
+
+    .arrows {
+        display: flex;
     }
 
     .feedbacks {

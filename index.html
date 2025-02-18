@@ -6,7 +6,6 @@
     <title>Shop.co</title>
     <link rel="stylesheet" href="styles/globalStyles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <script src="script.ts" defer></script>
     <title>SHOP.CO</title>
 </head>
 <body>
@@ -48,27 +47,28 @@
                 placeholder="Search For Products"
         />
     </div>
-    <div id="searchMobile">
-        <div onclick="toggleSearch()">
-            <i class="fas fa-search search-icon icon" ></i>
+    <div class="icon-container">
+        <div id="searchMobile">
+            <div onclick="toggleSearch()">
+                <i class="fas fa-search search-icon icon"></i>
+            </div>
+            <input
+                    type="text"
+                    id="inputMobile"
+                    name="searchBox"
+                    placeholder="Search For Products"
+            />
         </div>
-        <input
-                type="text"
-                id="inputMobile"
-                name="searchBox"
-                placeholder="Search For Products"
-        />
-    </div>
-    <div class="cart">
-        <a href="#">
-            <i class="fa fa-shopping-cart icon"></i>
-        </a>
-    </div>
-    <div class="account">
-        <a href="#">
-            <i class="fa-regular fa-circle-user icon"></i>
-        </a>
-    </div>
+        <div class="cart">
+            <a href="#">
+                <i class="fa fa-shopping-cart icon"></i>
+            </a>
+        </div>
+        <div class="account">
+            <a href="#">
+                <i class="fa-regular fa-circle-user icon"></i>
+            </a>
+        </div>
     </div>
 </header>
 <section class="hero">
@@ -106,121 +106,121 @@
     <img src="assets/image/prada-logo-1%201.svg" alt="Prada logo">
     <img src="assets/image/calvin-klein-logo.svg" alt="Calvin Klein logo">
 </section>
-    <section>
-        <div class="page-inner-content-two">
-            <h3 class="section-title">NEW ARRIVALS</h3>
-            <div class="cols cols-4">
-                <div class="product">
-                    <img src="assets/image/T-shirt.svg" alt="T-shirt">
-                    <p class="product-name">T-shirt with Tape Details</p>
-                    <div class="rate-container">
-                        <img class="rate" src="assets/image/star-1.svg" alt="rate">
-                        <p>4.5/<span>5</span></p>
-                    </div>
-                    <p class="product-price">$120</p>
+<section>
+    <div class="page-inner-content-two">
+        <h3 class="section-title">NEW ARRIVALS</h3>
+        <div class="cols cols-4">
+            <div class="product">
+                <img src="assets/image/T-shirt.svg" alt="T-shirt">
+                <p class="product-name">T-shirt with Tape Details</p>
+                <div class="rate-container">
+                    <img class="rate" src="assets/image/star-1.svg" alt="rate">
+                    <p>4.5/<span>5</span></p>
                 </div>
-                <div class="product">
-                    <img src="assets/image/Skinny-fit-jeans.svg" alt="Skinny-fit-jeans">
-                    <p class="product-name">Skinny Fit Jeans</p>
-                    <div class="rate-container">
-                        <img class="rate" src="assets/image/star-2.svg" alt="rate">
-                        <p>3.5/<span>5</span></p>
-                    </div>
-                    <div class="product-price-container">
-                        <p class="product-price">$240</p>
-                        <p class="product-price-old">$260</p>
-                        <div class="product-price-discount">-20%</div>
-                    </div>
+                <p class="product-price">$120</p>
+            </div>
+            <div class="product">
+                <img src="assets/image/Skinny-fit-jeans.svg" alt="Skinny-fit-jeans">
+                <p class="product-name">Skinny Fit Jeans</p>
+                <div class="rate-container">
+                    <img class="rate" src="assets/image/star-2.svg" alt="rate">
+                    <p>3.5/<span>5</span></p>
                 </div>
-                <div class="product">
-                    <img src="assets/image/Checkred-shirt.svg" alt="Checkred-shirt">
-                    <p class="product-name">Checkred Shirt</p>
-                    <div class="rate-container">
-                        <img class="rate" src="assets/image/star-1.svg" alt="rate">
-                        <p>4.5/<span>5</span></p>
-                    </div>
-                    <p class="product-price">$180</p>
-                </div>
-                <div class="product">
-                    <img src="assets/image/Sleeve-striped-t-shirt.svg" alt="Sleeve-striped-t-shirt">
-                    <p class="product-name">Sleeve Striped T-shirt</p>
-                    <div class="rate-container">
-                        <img class="rate" src="assets/image/star-1.svg" alt="rate">
-                        <p>4.5/<span>5</span></p>
-                    </div>
-                    <div class="product-price-container">
-                        <p class="product-price">$130</p>
-                        <p class="product-price-old">$160</p>
-                        <div class="product-price-discount">-30%</div>
-                    </div>
+                <div class="product-price-container">
+                    <p class="product-price">$240</p>
+                    <p class="product-price-old">$260</p>
+                    <div class="product-price-discount">-20%</div>
                 </div>
             </div>
-            <div class="view-all">View All</div>
-        </div>
-        <div class="page-inner-content-three">
-            <h3 class="section-title">TOP SELLING</h3>
-            <div class="cols cols-4">
-                <div class="product">
-                    <img src="assets/image/VERTICAL-STRIPED-SHIRT.svg" alt="Vertical Striped Shirt">
-                    <p class="product-name">Vertical Striped Shirt</p>
-                    <div class="rate-container">
-                        <img class="rate" src="assets/image/star-5.svg" alt="rate">
-                        <p>5.0/<span>5</span></p>
-                    </div>
-                    <div class="product-price-container">
-                        <p class="product-price">$212</p>
-                        <p class="product-price-old">$232</p>
-                        <div class="product-price-discount">-20%</div>
-                    </div>
+            <div class="product">
+                <img src="assets/image/Checkred-shirt.svg" alt="Checkred-shirt">
+                <p class="product-name">Checkred Shirt</p>
+                <div class="rate-container">
+                    <img class="rate" src="assets/image/star-1.svg" alt="rate">
+                    <p>4.5/<span>5</span></p>
                 </div>
-                <div class="product">
-                    <img src="assets/image/COURAGE-GRAPHIC-T-SHIRT.svg" alt="Courage Graphic T-shirt">
-                    <p class="product-name">Courage Graphic T-shirt</p>
-                    <div class="rate-container">
-                        <img class="rate" src="assets/image/star-4.svg" alt="rate">
-                        <p>4.0/<span>5</span></p>
-                    </div>
-                    <p class="product-price">$145</p>
+                <p class="product-price">$180</p>
+            </div>
+            <div class="product">
+                <img src="assets/image/Sleeve-striped-t-shirt.svg" alt="Sleeve-striped-t-shirt">
+                <p class="product-name">Sleeve Striped T-shirt</p>
+                <div class="rate-container">
+                    <img class="rate" src="assets/image/star-1.svg" alt="rate">
+                    <p>4.5/<span>5</span></p>
                 </div>
-                <div class="product">
-                    <img src="assets/image/LOOSE-FIT-BERMUDA-SHORTS.svg" alt="Loose Fit Bermuda Shorts">
-                    <p class="product-name">Loose Fit Bermuda Shorts</p>
-                    <div class="rate-container">
-                        <img class="rate" src="assets/image/star-3.svg" alt="rate">
-                        <p>3.0/<span>5</span></p>
-                    </div>
-                    <p class="product-price">$80</p>
+                <div class="product-price-container">
+                    <p class="product-price">$130</p>
+                    <p class="product-price-old">$160</p>
+                    <div class="product-price-discount">-30%</div>
                 </div>
-                <div class="product">
-                    <img src="assets/image/FADED-SKINNY-JEANS.svg" alt="Faded Skinny Jeans">
-                    <p class="product-name">Faded Skinny Jeans</p>
-                    <div class="rate-container">
-                        <img class="rate" src="assets/image/star-1.svg" alt="rate">
-                        <p>4.5/<span>5</span></p>
-                    </div>
-                    <p class="product-price">$210</p>
-                </div>
-            </div>
-            <p class="view-all">View All</p>
-        </div>
-    </section>
-    <section class="dress-style">
-        <h2>BROWSE BY DRESS STYLE</h2>
-        <div class="dress-style-items">
-            <div class="dress-style-item casual">
-                <h4>Casual</h4>
-            </div>
-            <div class="dress-style-item formal">
-                <h4>Formal</h4>
-            </div>
-            <div class="dress-style-item party">
-                <h4>Party</h4>
-            </div>
-            <div class="dress-style-item gym">
-                <h4>Gym</h4>
             </div>
         </div>
-    </section>
+        <div class="view-all">View All</div>
+    </div>
+    <div class="page-inner-content-three">
+        <h3 class="section-title">TOP SELLING</h3>
+        <div class="cols cols-4">
+            <div class="product">
+                <img src="assets/image/VERTICAL-STRIPED-SHIRT.svg" alt="Vertical Striped Shirt">
+                <p class="product-name">Vertical Striped Shirt</p>
+                <div class="rate-container">
+                    <img class="rate" src="assets/image/star-5.svg" alt="rate">
+                    <p>5.0/<span>5</span></p>
+                </div>
+                <div class="product-price-container">
+                    <p class="product-price">$212</p>
+                    <p class="product-price-old">$232</p>
+                    <div class="product-price-discount">-20%</div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="assets/image/COURAGE-GRAPHIC-T-SHIRT.svg" alt="Courage Graphic T-shirt">
+                <p class="product-name">Courage Graphic T-shirt</p>
+                <div class="rate-container">
+                    <img class="rate" src="assets/image/star-4.svg" alt="rate">
+                    <p>4.0/<span>5</span></p>
+                </div>
+                <p class="product-price">$145</p>
+            </div>
+            <div class="product">
+                <img src="assets/image/LOOSE-FIT-BERMUDA-SHORTS.svg" alt="Loose Fit Bermuda Shorts">
+                <p class="product-name">Loose Fit Bermuda Shorts</p>
+                <div class="rate-container">
+                    <img class="rate" src="assets/image/star-3.svg" alt="rate">
+                    <p>3.0/<span>5</span></p>
+                </div>
+                <p class="product-price">$80</p>
+            </div>
+            <div class="product">
+                <img src="assets/image/FADED-SKINNY-JEANS.svg" alt="Faded Skinny Jeans">
+                <p class="product-name">Faded Skinny Jeans</p>
+                <div class="rate-container">
+                    <img class="rate" src="assets/image/star-1.svg" alt="rate">
+                    <p>4.5/<span>5</span></p>
+                </div>
+                <p class="product-price">$210</p>
+            </div>
+        </div>
+        <p class="view-all">View All</p>
+    </div>
+</section>
+<section class="dress-style">
+    <h2>BROWSE BY DRESS STYLE</h2>
+    <div class="dress-style-items">
+        <div class="dress-style-item casual">
+            <h4>Casual</h4>
+        </div>
+        <div class="dress-style-item formal">
+            <h4>Formal</h4>
+        </div>
+        <div class="dress-style-item party">
+            <h4>Party</h4>
+        </div>
+        <div class="dress-style-item gym">
+            <h4>Gym</h4>
+        </div>
+    </div>
+</section>
 <section class="review">
     <div class="title-review">
         <h2>OUR HAPPY CUSTOMERS</h2>
@@ -228,7 +228,7 @@
             <a class="prevButton buttonStyle">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
-            <a  class="nextButton buttonStyle">
+            <a class="nextButton buttonStyle">
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
@@ -354,11 +354,13 @@
         document.querySelector('.burger-menu').classList.toggle('active');
         document.querySelector('.menu-items').classList.toggle('active');
     }
+
     function toggleSearch() {
         document.querySelector('#inputMobile').classList.toggle('active');
         document.querySelector('#searchMobile').classList.toggle('active');
         document.querySelector('.icon-container').classList.toggle('active');
     }
+
     document.addEventListener("DOMContentLoaded", function () {
         const feedbackContainer = document.querySelector(".feedbacks");
         const feedbacks = document.querySelectorAll(".feedback");
@@ -380,7 +382,7 @@
         function moveNext() {
             if (currentIndex < feedbacks.length - 2) {
                 currentIndex++;
-                feedbackContainer.scrollBy({ left: feedbackWidth, behavior: "smooth" });
+                feedbackContainer.scrollBy({left: feedbackWidth, behavior: "smooth"});
                 updateFeedbackBlur();
             }
         }
@@ -388,7 +390,7 @@
         function movePrev() {
             if (currentIndex > 0) {
                 currentIndex--;
-                feedbackContainer.scrollBy({ left: -feedbackWidth, behavior: "smooth" });
+                feedbackContainer.scrollBy({left: -feedbackWidth, behavior: "smooth"});
                 updateFeedbackBlur();
             }
         }
