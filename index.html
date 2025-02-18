@@ -14,95 +14,99 @@
     <p>Sign up and get 20% off to your first order.</p>
     <a class="signUp" href='/register'>Sign Up Now</a>
 </nav>
-<div class="navbar show-menu">
-    <div class="header-inner-content">
-        <img src="assets/icons/menu.svg" class="menu-button">
-        <h1 class="logo">SHOP.CO</h1>
-        <nav>
+<header>
+    <div class="logo-container">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu-items">
             <ul>
                 <li>Shop</li>
                 <li>On Sale</li>
                 <li>New Arrivals</li>
                 <li>Brands</li>
             </ul>
-        </nav>
-    </div>
-    <div class="search-container">
-        <i class="fa fa-search"></i>
-        <input class="search" type="text" placeholder="Search for products...">
-    </div>
-    <div class="nav-icon-container">
-        <img src="assets/icons/lupa.svg" alt="magnifying glass" class="search-querie">
-        <img src="assets/icons/carrinho.svg" alt="Cart">
-        <img src="assets/icons/user.svg" alt="User">
-    </div>
-</div>
-<header>
-    <div class="header-inner-content-two">
-        <div class="header-bottom-side">
-            <div class="header-bottom-side-left">
-                <div class="side-left-text">
-                    <h2>FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
-                    <p>
-                        Browse through our diverse range of meticulously crafted garments,
-                        designed to bring out your individuality and cater to your sense of style.
-                    </p>
-                </div>
-                <button>Shop Now</button>
-                <div class="container-info-wrapper">
-                    <ul class="container-info">
-                        <li class="statistic-number">
-                            <h3 class="item-value">200+</h3>
-                            <p class="item-description">International Brands</p>
-                        </li>
-                        <div class="divider"></div>
-                        <li class="statistic-number">
-                            <h3 class="item-value">2,000+</h3>
-                            <p class="item-description">High-Quality Products</p>
-                        </li>
-                        <div class="divider-two"></div>
-                        <li class="statistic-number">
-                            <h3 class="item-value">30,000+</h3>
-                            <p class="item-description">Happy Customers</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header-bottom-side-right">
-                <img class="peoples-desktop" src="assets/image/peoples-desktop.svg" alt="peoples">
-                <img class="peoples-mobile" src="assets/image/peoples.svg" alt="peoples">
-            </div>
         </div>
+        <div class="logo">SHOP.CO</div>
+    </div>
+    <nav>
+        <ul>
+            <li>Shop</li>
+            <li>On Sale</li>
+            <li>New Arrivals</li>
+            <li>Brands</li>
+        </ul>
+    </nav>
+    <div id="search">
+        <i class="fas fa-search search-icon icon"></i>
+        <input
+                type="text"
+                id="input"
+                name="searchBox"
+                placeholder="Search For Products"
+        />
+    </div>
+    <div id="searchMobile">
+        <div onclick="toggleSearch()">
+            <i class="fas fa-search search-icon icon" ></i>
+        </div>
+        <input
+                type="text"
+                id="inputMobile"
+                name="searchBox"
+                placeholder="Search For Products"
+        />
+    </div>
+    <div class="cart">
+        <a href="#">
+            <i class="fa fa-shopping-cart icon"></i>
+        </a>
+    </div>
+    <div class="account">
+        <a href="#">
+            <i class="fa-regular fa-circle-user icon"></i>
+        </a>
+    </div>
     </div>
 </header>
-<!--Main Content-->
-<main>
-    <!-- Brand Logos -->
-    <div class="page-inner-content-desktop">
-        <div class="cols cols-5">
-            <img src="assets/image/Versace.svg" alt="Versace logo">
-            <img src="assets/image/zara-logo-1%201.svg" alt="Zara logo">
-            <img src="assets/image/gucci-logo-1%201.svg" alt="Gucci logo">
-            <img src="assets/image/prada-logo-1%201.svg" alt="Prada logo">
-            <img src="assets/image/calvin-klein-logo.svg" alt="Calvin Klein logo">
+<section class="hero">
+    <div class="hero-text">
+        <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+        <p>
+            Browse through our diverse range of meticulously crafted garments,
+            designed to bring out your individuality and cater to your sense of
+            style.
+        </p>
+        <a href="#" class="cta-btn">Shop Now</a>
+    </div>
+    <div class="shop-categories">
+        <div class="category">
+            <span class="category-number">200+</span>
+            <span class="category-name">International Brands</span>
+        </div>
+        <div class="divider"></div>
+        <div class="category">
+            <span class="category-number">2,000+</span>
+            <span class="category-name">High-Quality Products</span>
+        </div>
+        <div class="divider-two"></div>
+        <div class="category">
+            <span class="category-number">30,000+</span>
+            <span class="category-name">Happy Customers</span>
         </div>
     </div>
-    <div class="page-inner-content-mobile">
-        <div class="cols-mobile cols-5">
-            <div class="image-container-up">
-                <img src="assets/image/versace-mobile.svg" alt="Versace logo">
-                <img src="assets/image/zara-logo-mobile.svg" alt="Zara logo">
-                <img src="assets/image/gucci-logo-mobile.svg" alt="Gucci logo">
-            </div>
-            <div class="image-container-down">
-                <img src="assets/image/prada-logo-mobile.svg" alt="Prada logo">
-                <img src="assets/image/calvin-klein-mobile.svg" alt="Calvin Klein logo">
-            </div>
-        </div>
-    </div>
-    <!-- Brand Logos -->
-    <div>
-        <!-- NEW ARRIVALS -->
+    <img src="assets/image/Rectangle-2.png" alt="image-hero"/>
+</section>
+<section class="logo-banner">
+    <img src="assets/image/Versace.svg" alt="Versace logo">
+    <img src="assets/image/zara-logo-1%201.svg" alt="Zara logo">
+    <img src="assets/image/gucci-logo-1%201.svg" alt="Gucci logo">
+    <img src="assets/image/prada-logo-1%201.svg" alt="Prada logo">
+    <img src="assets/image/calvin-klein-logo.svg" alt="Calvin Klein logo">
+</section>
+    <section>
         <div class="page-inner-content-two">
             <h3 class="section-title">NEW ARRIVALS</h3>
             <div class="cols cols-4">
@@ -153,9 +157,6 @@
             </div>
             <div class="view-all">View All</div>
         </div>
-        <!-- NEW ARRIVALS -->
-
-        <!--  TOP SELLING -->
         <div class="page-inner-content-three">
             <h3 class="section-title">TOP SELLING</h3>
             <div class="cols cols-4">
@@ -200,139 +201,204 @@
                     <p class="product-price">$210</p>
                 </div>
             </div>
-            <div class="view-all">View All</div>
+            <p class="view-all">View All</p>
         </div>
-        <!--  TOP SELLING -->
-    </div>
-    <div class="gray-background">
-        <div class="page-inner-content-four">
-            <h4 class="title-style">BROWSE BY DRESS STYLE</h4>
-            <div class="container-image">
-                <img src="assets/image/casual.svg" alt="Casual Style">
-                <img src="assets/image/Formal.svg" alt="Formal Style">
-                <img src="assets/image/party.svg" alt="Party Style">
-                <img src="assets/image/Gym.svg" alt="Gym Style">
+    </section>
+    <section class="dress-style">
+        <h2>BROWSE BY DRESS STYLE</h2>
+        <div class="dress-style-items">
+            <div class="dress-style-item casual">
+                <h4>Casual</h4>
+            </div>
+            <div class="dress-style-item formal">
+                <h4>Formal</h4>
+            </div>
+            <div class="dress-style-item party">
+                <h4>Party</h4>
+            </div>
+            <div class="dress-style-item gym">
+                <h4>Gym</h4>
             </div>
         </div>
-    </div>
-    <div class="page-inner-content-four-mobile">
-        <h4 class="title-style">BROWSE BY DRESS STYLE</h4>
-        <div class="dress dress-style">
-            <div class="container-image">
-                <img src="assets/image/casual-mobile.svg" alt="Casual Style">
-                <img src="assets/image/formal-mobile.svg" alt="Formal Style">
-                <img src="assets/image/party-mobile.svg" alt="Party Style">
-                <img src="assets/image/gym-mobile.svg" alt="Gym Style">
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="page-inner-content-feedbacks">
-            <h5>OUR HAPPY CUSTOMERS</h5>
-            <div class="feedbacks">
-                <div class="feedback">
-                    <img src="assets/image/star-5.svg" alt="rate">
-                    <p class="name-user">Sarah M.</p>
-                    <p class="feedback-message">
-                        "I'm blown away by the quality and style of the clothes I received from Shop.co.
-                        From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                    </p>
-                </div>
-                <div class="feedback">
-                    <img src="assets/image/star-5.svg" alt="rate">
-                    <p class="name-user">Alex K.</p>
-                    <p class="feedback-message">"Finding clothes that align with my personal style used to be a
-                        challenge until I discovered Shop.co.
-                        The range of options they offer is truly remarkable, catering to a variety of tastes and
-                        occasions.”
-                    </p>
-                </div>
-                <div class="feedback">
-                    <img src="assets/image/star-5.svg" alt="rate">
-                    <p class="name-user">James L.</p>
-                    <p class="feedback-message">"As someone who's always on the lookout for unique fashion pieces,
-                        I'm thrilled to have stumbled upon Shop.co.
-                        The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
-                </div>
-            </div>
+    </section>
+<section class="review">
+    <div class="title-review">
+        <h2>OUR HAPPY CUSTOMERS</h2>
+        <div class="arrows">
+            <a class="prevButton buttonStyle">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <a  class="nextButton buttonStyle">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
     </div>
-</main>
-<footer>
-    <div class="gray-background-footer">
-        <div class="newsletter">
-            <h2>STAY UP TO DATE ABOUT <br> OUR LATEST OFFERS</h2>
-            <div class="newsletter-form">
-                <input type="email" placeholder="Enter your email address">
-                <button>Subscribe to Newsletter</button>
-            </div>
+    <div class="feedbacks">
+        <div class="feedback">
+            <img src="assets/image/star-5.svg" alt="rate">
+            <p class="name-user">Sarah M.</p>
+            <p class="feedback-message">
+                "I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+            </p>
         </div>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h2>SHOP.CO</h2>
-                <p>We have clothes that suit your style and which you're proud to wear. From women to men.</p>
-                <div class="social-icons">
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-github"></i>
-                </div>
-            </div>
-            <div class="footer-links">
-                <div class="column">
-                    <h3>COMPANY</h3>
-                    <a href="#">About</a>
-                    <a href="#">Features</a>
-                    <a href="#">Works</a>
-                    <a href="#">Career</a>
-                </div>
-                <div class="column">
-                    <h3>HELP</h3>
-                    <a href="#">Customer Support</a>
-                    <a href="#">Delivery Details</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
-                <div class="column">
-                    <h3>FAQ</h3>
-                    <a href="#">Account</a>
-                    <a href="#">Manage Deliveries</a>
-                    <a href="#">Orders</a>
-                    <a href="#">Payments</a>
-                </div>
-                <div class="column">
-                    <h3>RESOURCES</h3>
-                    <a href="#">Free eBooks</a>
-                    <a href="#">Development Tutorial</a>
-                    <a href="#">How-to Blog</a>
-                    <a href="#">YouTube Playlist</a>
-                </div>
-            </div>
+        <div class="feedback">
+            <img src="assets/image/star-5.svg" alt="rate">
+            <p class="name-user">Sarah M.</p>
+            <p class="feedback-message">
+                "I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+            </p>
         </div>
+        <div class="feedback">
+            <img src="assets/image/star-5.svg" alt="rate">
+            <p class="name-user">Alex K.</p>
+            <p class="feedback-message">"Finding clothes that align with my personal style used to be a
+                challenge until I discovered Shop.co.
+                The range of options they offer is truly remarkable, catering to a variety of tastes and
+                occasions.”
+            </p>
+        </div>
+        <div class="feedback">
+            <img src="assets/image/star-5.svg" alt="rate">
+            <p class="name-user">James L.</p>
+            <p class="feedback-message">"As someone who's always on the lookout for unique fashion pieces,
+                I'm thrilled to have stumbled upon Shop.co.
+                The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+        </div>
+        <div class="feedback">
+            <img src="assets/image/star-5.svg" alt="rate">
+            <p class="name-user">James L.</p>
+            <p class="feedback-message">"As someone who's always on the lookout for unique fashion pieces,
+                I'm thrilled to have stumbled upon Shop.co.
+                The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+        </div>
+    </div>
+</section>
+<section class="subscribe">
+    <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+    <form id="subscribeForm">
+        <div class="input-group">
+            <i class="fa-solid fa-envelope" id="envelope-icon"></i>
+            <input type="email" id="emailInput" placeholder="Enter your email address" required>
 
-        <div class="footer-bottom">
-            <p>Shop.co © 2000-2023, All Rights Reserved</p>
-            <div class="payment-icons">
-                <img src="assets/image/visa-logo.svg" alt="Visa">
-                <img src="assets/image/mastercard-logo.svg" alt="MasterCard">
-                <img src="assets/image/paypal-logo.svg" alt="PayPal">
-                <img src="assets/image/apple-pay.svg" alt="Apple Pay">
-                <img src="assets/image/google-pay.svg" alt="Google Pay">
+        </div>
+        <button type="submit">Subscribe to Newsletter</button>
+        </div>
+    </form>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="shopco">
+            <h2>SHOP.CO</h2>
+            <p>We have clothes that suits your style and which you're proud to wear. From women to men.</p>
+            <div class="socialImages">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
             </div>
+
+        </div>
+        <div class="company">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Delivery Details</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="faq">
+            <h4>FAQ</h4>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Manage Deliveries</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Payments</a></li>
+            </ul>
+        </div>
+        <div class="resources">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Free eBooks</a></li>
+                <li><a href="#">Development Tutorial</a></li>
+                <li><a href="#">How to - Blog</a></li>
+                <li><a href="#">Youtube Playlist</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="section-divider">
+    <div class="copyRight">
+        <p>Shop.co &copy; 2000-2023, All Rights Reserved</p>
+        <div class="images">
+            <img src="assets/image/visa-logo.svg" alt="Visa">
+            <img src="assets/image/mastercard-logo.svg" alt="MasterCard">
+            <img src="assets/image/paypal-logo.svg" alt="PayPal">
+            <img src="assets/image/apple-pay.svg" alt="Apple Pay">
+            <img src="assets/image/google-pay.svg" alt="Google Pay">
         </div>
     </div>
 </footer>
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const navbar = document.querySelector(".navbar");
-        const menuButton = document.querySelector(".menu-button");
+    function toggleMenu() {
+        document.querySelector('.burger-menu').classList.toggle('active');
+        document.querySelector('.menu-items').classList.toggle('active');
+    }
+    function toggleSearch() {
+        document.querySelector('#inputMobile').classList.toggle('active');
+        document.querySelector('#searchMobile').classList.toggle('active');
+        document.querySelector('.icon-container').classList.toggle('active');
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        const feedbackContainer = document.querySelector(".feedbacks");
+        const feedbacks = document.querySelectorAll(".feedback");
+        const prevButton = document.querySelector(".prevButton");
+        const nextButton = document.querySelector(".nextButton");
 
-        if (menuButton) {
-            menuButton.addEventListener("click", () => {
-                navbar.classList.toggle("show-menu");
+        let currentIndex = 0;
+        const feedbackWidth = feedbacks[0].offsetWidth + 16;
+
+        function updateFeedbackBlur() {
+            feedbacks.forEach((feedback, index) => {
+                feedback.style.filter = (index === currentIndex || index === currentIndex + 1) ? "none" : "blur(5px)";
             });
+
+            prevButton.classList.toggle("disabled", currentIndex === 0);
+            nextButton.classList.toggle("disabled", currentIndex >= feedbacks.length - 2);
         }
+
+        function moveNext() {
+            if (currentIndex < feedbacks.length - 2) {
+                currentIndex++;
+                feedbackContainer.scrollBy({ left: feedbackWidth, behavior: "smooth" });
+                updateFeedbackBlur();
+            }
+        }
+
+        function movePrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                feedbackContainer.scrollBy({ left: -feedbackWidth, behavior: "smooth" });
+                updateFeedbackBlur();
+            }
+        }
+
+        nextButton.addEventListener("click", moveNext);
+        prevButton.addEventListener("click", movePrev);
+
+        updateFeedbackBlur();
     });
+
 </script>
 </body>
 </html>
